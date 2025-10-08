@@ -1,0 +1,4 @@
+[submodule "samples/rdr-dual"]
+	path = samples/rdr-dual
+	url = https://github.com/veriKami/remark-deflist-revisited-dual
+	branch = main
