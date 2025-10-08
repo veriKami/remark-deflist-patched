@@ -4,7 +4,7 @@
   "include": ["src/index.js"], /*/
   // "include": ["src/index.ts", "src/index.d.ts"],
   // "include": ["src"],
-  "include": ["src/index.ts", "src/mdast.d.ts"],
+  "include": ["src/index*.ts", "src/mdast.d.ts"],
   //*/// :><: toggle :>
   "exclude": ["node_modules"],
   // "files": ["src/**/*"],
