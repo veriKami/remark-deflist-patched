@@ -1,7 +1,20 @@
-# veriKami °// Weronika Kami
+# veriKami °// Remark Deflist Revisited
 
 My latest "pro bono" work – (npm/jsr) module for parsing nested definision lists.  
 Developed on the margins of a certain markdown-related project.
+
+## @verikami/remark-deflist-patched
+
+<!--### Interactive Start-->
+[![Codeflow][Codeflow Badge]][Codeflow #]
+[![StackBlitz][StackBlitz Badge]][StackBlitz #]
+[![Codesandbox][Codesandbox Badge]][Codesandbox #]
+
+This (patched) version is primarily used for experimentation, testing and development.  
+The base version can be found in the module **[`@verikami/remark-deflist-revisited`][page]**.
+
+<!--### Cloudflare Worker Deploy-->
+<!--[![Cloudflare][Cloudflare Badge]][Cloudflare #]-->
 
 ## @verikami/remark-deflist-revisited
 
@@ -346,3 +359,18 @@ npx @verikami/remark-deflist-revisited --help
 [SB_e]: https://stackblitz.com/github/veriKami/remark-deflist-revisited/tree/main/samples/express?startScript=start
 [SB_w]: https://stackblitz.com/github/veriKami/remark-deflist-revisited/tree/main/samples/worker?startScript=dev
 [SB_a]: https://stackblitz.com/github/veriKami/remark-deflist-revisited/tree/main/samples/astro?startScript=dev
+
+[Codeflow Badge]: https://developer.stackblitz.com/img/open_in_codeflow.svg
+[Codeflow #]: https:///pr.new/veriKami/remark-deflist-patched?startScript=start
+
+[StackBlitz Badge]: https://developer.stackblitz.com/img/open_in_stackblitz.svg
+[StackBlitz #]: https://stackblitz.com/github/veriKami/remark-deflist-patched?startScript=start
+
+[Codesandbox Badge]: https://codesandbox.io/static/img/play-codesandbox.svg
+[Codesandbox #]: https://codesandbox.io/p/github/veriKami/remark-deflist-patched
+
+[Codespaces Badge]: https://github.com/codespaces/badge.svg
+[Codespaces #]: https://codespaces.new/veriKami/remark-deflist-patched?quickstart=1
+
+[Cloudflare Badge]: https://deploy.workers.cloudflare.com/button
+[Cloudflare #]: https://deploy.workers.cloudflare.com/?url=https://github.com/veriKami/remark-deflist-patched

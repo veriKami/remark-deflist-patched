@@ -88,7 +88,7 @@
     "bump": "node scripts/bump.js",
     "release": "pnpm bump"
   },
-  "packageManager": "pnpm@10.17.1",
+  "packageManager": "pnpm@10.18.0",
   "dependencies": {
     "remark": "^15.0.1",
     "remark-deflist": "^1.0.0",
