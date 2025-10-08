@@ -1,71 +1,7 @@
-/**
- * @module deflistWithLists
- *
- * Remark plugin that extends `remark-deflist` to handle nested lists inside
- * description details. It elegantly solves issues where lists are direct
- * children of `<dd>` tags by performing post-processing transformations.
- *
- * For detailed functionality, see the {@link deflistWithLists} function documentation.
- *
- * Usage:
- * ```ts
- * import { remark } from "remark";
- * import html from "remark-html";
- * import deflistWithLists from "./index.ts";
- *
- * const markdown = `
- * Term
- * : - item A
- *   - item B
- * `;
- *
- * remark().use(deflistWithLists).use(html).process(markdown);
- * ```
- */
-
 import { remark } from "remark";
 import deflist from "remark-deflist";
 import { remove } from "unist-util-remove";
 import { visit } from "unist-util-visit";
-
-/**
- * Remark plugin that extends `remark-deflist` to handle nested lists inside
- * descriptiondetails. It first runs the original `remark-deflist` plugin
- * and then performs additional processing.
- *
- * Features:
- * - merges paragraph children containing list items into proper lists
- * - merges descriptionlist nodes with following lists
- * - groups multiple descriptionlist nodes into a single node
- *
- * Nodes handled:
- * - `descriptionlist` (`<dl>`)
- * - `descriptionterm` (`<dt>`)
- * - `descriptiondetails` (`<dd>`)
- *
- * @returns {import("unified").Transformer} A remark plugin transformer
- * that post-processes `remark-deflist`.
- *
- * @example
- * ```ts
- * import { remark } from "remark";
- * import html from "remark-html";
- * import deflistWithLists from "./index.ts";
- *
- * const markdown = `
- * Term
- * : - item A
- *   - item B
- * `;
- *
- * const output = await remark()
- *   .use(deflistWithLists)
- *   .use(html)
- *   .process(markdown);
- *
- * console.log(String(output));
- * ```
- */
 const deflistWithLists = () => {
   const base = deflist();
   return (tree, file) => {
@@ -162,13 +98,6 @@ const deflistWithLists = () => {
         && (siblings[currentIndex].type === "list"
           || siblings[currentIndex].type === "paragraph")
       ) {
-        if (siblings[currentIndex].type === "paragraph") {
-          for (const item of siblings[currentIndex].children) {
-            if (item.value === ": ") {
-              remove(tree, item);
-            }
-          }
-        }
         elements.push(siblings[currentIndex]);
         currentIndex++;
       }

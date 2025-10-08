@@ -186,26 +186,6 @@ const deflistWithLists: Plugin<[], Root> = () => {
     });
 
     //: ----------------------------------------------------
-    //: (2+) Move <p> that appear directly after a <dd>
-    //: inside it - merging descriptionlist + list
-    //: ----------------------------------------------------
-    // visit(tree, "paragraph", (p: Paragraph, index: number, parent: Parent | undefined) => {
-    //   const nextNode = parent.children[index + 1];
-
-    //   if (nextNode && nextNode.type === "list") {
-    //     // const ddList = (lastDd as Paragraph).children.find(c => c.type === "list");
-    //     const ddList = p.children.find(c => c.type === "list");
-    //     if (ddList) {
-    //       (ddList as List).children.push(...(nextNode as List).children);
-    //     } else {
-    //       // (lastDd as Paragraph).children.push(nextNode);
-    //       p.children.push(nextNode);
-    //     }
-    //     parent.children.splice(index + 1, 1);
-    //   }
-    // });
-
-    //: ----------------------------------------------------
     //: (3) patch list (not using 1'st element) and decide
     //: if it is unordered: <ul> or ordered: <ol> one
     //: ----------------------------------------------------
@@ -262,13 +242,6 @@ const deflistWithLists: Plugin<[], Root> = () => {
         (siblings[currentIndex].type === "list" ||
           siblings[currentIndex].type === "paragraph")
       ) {
-        //: clean (orphan) : * <strong>
-        if (siblings[currentIndex].type === "paragraph") {
-          for (const item of (siblings[currentIndex] as Paragraph).children) {
-            /* c8 ignore next */
-            if ((item as Text).value === ": ") remove(tree, item);
-          }
-        }
         elements.push(siblings[currentIndex]);
         currentIndex++;
       }
@@ -426,9 +399,7 @@ const prepareMarkdown = (tree: Root, file: VFile) => {
           result.push(`  ${content}`); //: ul
         }
       } else if (/^: .*/.test(line)) {
-        result.push("\n" + line); //: this creates <p> //////////////////////
-        // This is A separate item. This is the A line of the same item. : Definition B
-        // result.push(line); //: this creates ^ ////////////////////////////
+        result.push("\n" + line);
       } else {
         result.push(line);
       }
