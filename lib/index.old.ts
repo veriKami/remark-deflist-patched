@@ -191,11 +191,6 @@ const deflistWithLists: Plugin<[], Root> = () => {
           && (siblings[currentIndex].type === "list"
             || siblings[currentIndex].type === "paragraph")
         ) {
-          if (siblings[currentIndex].type === "paragraph") {
-            for (const item of (siblings[currentIndex] as Paragraph).children) {
-              if ((item as Text).value === ": ") remove(tree, item);
-            }
-          }
           elements.push(siblings[currentIndex]);
           currentIndex++;
         }
