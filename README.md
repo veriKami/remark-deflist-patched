@@ -1,6 +1,6 @@
 # veriKami °// Remark Deflist Revisited
 
-[![pkg.pr.new](/badge/veriKami/remark-deflist-patched)](/~/veriKami/remark-deflist-patched)
+[![pkg.pr.new][pkg.pr.new Badge]][pkg.pr.new]
 
 My latest "pro bono" work – (npm/jsr) module for parsing nested definision lists.  
 Developed on the margins of a certain markdown-related project.
@@ -355,6 +355,9 @@ npx @verikami/remark-deflist-revisited --help
 
 [Socket Badge]: https://badge.socket.dev/npm/package/@verikami/remark-deflist-revisited
 [Socket]: https://socket.dev/npm/package/@verikami/remark-deflist-revisited
+
+[pkg.pr.new Badge]: https://pkg.pr.new/badge/veriKami/remark-deflist-patched
+[pkg.pr.new]: https://pkg.pr.new/~/veriKami/remark-deflist-patched
 
 [SB Badge]: https://developer.stackblitz.com/img/open_in_stackblitz_small.svg
 [SB_s]: https://stackblitz.com/github/veriKami/remark-deflist-revisited/tree/main/samples/simple?startScript=start
