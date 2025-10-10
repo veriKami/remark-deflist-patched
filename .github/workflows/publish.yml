@@ -9,8 +9,8 @@ on:
         options:
         -
         - gpr
-        - npm
-        - jsr
+        # - npm
+        # - jsr
         - page
   push:
     tags:
@@ -41,19 +41,19 @@ jobs:
       - name: "Run tests"
         run: pnpm vitest run --coverage
 
-      - name: "Codecov: Run tests (report)"
-        run: pnpm vitest run --reporter=junit --outputFile=test-report.junit.xml
+      # - name: "Codecov: Run tests (report)"
+      #   run: pnpm vitest run --reporter=junit --outputFile=test-report.junit.xml
 
-      - name: "Codecov: Upload test results"
-        if: ${{ !cancelled() }}
-        uses: codecov/test-results-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+      # - name: "Codecov: Upload test results"
+      #   if: ${{ !cancelled() }}
+      #   uses: codecov/test-results-action@v1
+      #   with:
+      #     token: ${{ secrets.CODECOV_TOKEN }}
 
-      - name: "Codecov: Upload coverage reports"
-        uses: codecov/codecov-action@v5
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+      # - name: "Codecov: Upload coverage reports"
+      #   uses: codecov/codecov-action@v5
+      #   with:
+      #     token: ${{ secrets.CODECOV_TOKEN }}
 
       - name: "Build"
         run: pnpm build
@@ -102,23 +102,23 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@v4
 
-      - name: "Setup pnpm"
-        uses: pnpm/action-setup@v4
+      # - name: "Setup pnpm"
+      #   uses: pnpm/action-setup@v4
 
-      - name: "Setup Node"
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: "pnpm"
+      # - name: "Setup Node"
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: 20
+      #     cache: "pnpm"
 
-      - name: "Install dependencies"
-        run: pnpm install --frozen-lockfile
+      # - name: "Install dependencies"
+      #   run: pnpm install --frozen-lockfile
 
-      - name: "Build"
-        run: pnpm build
+      # - name: "Build"
+      #   run: pnpm build
 
-      - name: "Make demo"
-        run: pnpm demo
+      # - name: "Make demo"
+      #   run: pnpm demo
 
       - name: "Setup Pages"
         uses: actions/configure-pages@v5
@@ -126,7 +126,8 @@ jobs:
       - name: "Upload artifact"
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./demo"
+          # path: "./demo"
+          path: "./demo/codesandbox"
 
       - name: "Deploy to GitHub Pages"
         id: deployment
