@@ -1,5 +1,7 @@
 # veriKami °// Remark Deflist Revisited
 
+[![pkg.pr.new](/badge/veriKami/remark-deflist-patched)](/~/veriKami/remark-deflist-patched)
+
 My latest "pro bono" work – (npm/jsr) module for parsing nested definision lists.  
 Developed on the margins of a certain markdown-related project.
 
