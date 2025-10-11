@@ -353,7 +353,7 @@ npx @verikami/remark-deflist-revisited --help
 [CI Badge]: https://github.com/veriKami/remark-deflist-revisited/actions/workflows/publish.yml/badge.svg
 [CI]: https://github.com/veriKami/remark-deflist-revisited/actions/workflows/publish.yml
 
-[NPM Badge]: https://img.shields.io/npm/v/@verikami/remark-deflist-revisited?logo=npm&logoColor=white&labelColor=red&color=black
+[NPM Badge]: https://img.shields.io/npm/v/@verikami/remark-deflist-revisited?logo=npm&logoColor=white&labelColor=crimson&color=black
 [NPM]: https://www.npmjs.com/package/@verikami/remark-deflist-revisited
 
 [JSR Badge]: https://jsr.io/badges/@verikami/remark-deflist-revisited
@@ -367,7 +367,7 @@ npx @verikami/remark-deflist-revisited --help
 
 [_pkg.pr.new Badge]: https://pkg.pr.new/badge/veriKami/remark-deflist-patched
 [_pkg.pr.new]: https://pkg.pr.new/~/veriKami/remark-deflist-patched
-[_NPM Badge]: https://img.shields.io/npm/v/@verikami/remark-deflist-patched?logo=npm&logoColor=white&labelColor=gray&color=black
+[_NPM Badge]: https://img.shields.io/npm/v/@verikami/remark-deflist-patched?logo=npm&logoColor=white&labelColor=crimson&color=black
 [_NPM]: https://www.npmjs.com/package/@verikami/remark-deflist-patched
 [_Downloads Badge]: https://img.shields.io/npm/dm/@verikami/remark-deflist-patched.svg
 [_Downloads]: https://www.npmjs.com/package/@verikami/remark-deflist-patched
