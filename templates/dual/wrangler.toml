@@ -1,0 +1,18 @@
+# wrangler.toml
+name = "verikami-rdr-worker"
+main = "worker.js"
+compatibility_date = "2025-10-04"
+
+[dev]
+ip = "127.0.0.1"
+port = 8787
+
+[[rules]]
+type = "Text"
+globs = ["**/*.css"]
+fallthrough = true # Allow other rules to be processed
+
+[[rules]]
+type = "Text"
+globs = ["**/*.md"]
+fallthrough = false # This is the last text rule
