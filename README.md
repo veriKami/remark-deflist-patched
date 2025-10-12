@@ -322,7 +322,7 @@ npx @verikami/remark-deflist-revisited --help
         ______________██__█▄
 ```
 
-2025 © MIT °// [veriKami] °// [Weronika Kami]
+2025 © MIT \\\° [veriKami] °// [Weronika Kami]
 
 [veriKami]: https://verikami.com
 [Weronika Kami]: https://linkedin.com/in/verikami
