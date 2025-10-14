@@ -3,6 +3,13 @@
 My latest "pro bono" work – (npm/jsr) module for parsing nested definision lists.  
 Developed on the margins of a certain markdown-related project.
 
+Project (page) → [verikami.github.io/remark-deflist-revisited][page]
+
+<!--
+![](https://komarev.com/ghpvc/?username=veriKami&color=ff69b4)
+[![committers.top badge](https://user-badge.committers.top/poland_public/veriKami.svg)](https://user-badge.committers.top/poland_public/veriKami)
+-->
+
 <br>
 
 ## @verikami/remark-deflist-patched
@@ -13,7 +20,7 @@ Developed on the margins of a certain markdown-related project.
 [![Codesandbox][Codesandbox Badge]][Codesandbox #]
 
 This (patched) version is primarily used for experimentation, testing and development.  
-The base version can be found in the module **[`@verikami/remark-deflist-revisited`][page]**.
+The base version can be found in the module **[`@verikami/remark-deflist-revisited`][repo]**.
 
 <br>
 
@@ -34,7 +41,7 @@ The base version can be found in the module **[`@verikami/remark-deflist-revisit
 [![CI][CI Badge]][CI]
 [![NPM][NPM Badge]][NPM]
 [![JSR][JSR Badge]][JSR]
-[![Socket][Socket Badge]][Socket]
+<!--[![Socket][Socket Badge]][Socket]-->
 
 **[Remark]** plugin. A wrapper around `remark-deflist` with improved support for nested definition lists.
 It preserves all the original functionality and performs additional processing.
@@ -327,6 +334,7 @@ npx @verikami/remark-deflist-revisited --help
 [veriKami]: https://verikami.com
 [Weronika Kami]: https://linkedin.com/in/verikami
 
+[repo]: https://github.com/veriKami/remark-deflist-revisited
 [page]: https://verikami.github.io/remark-deflist-revisited
 [inline]: https://verikami.github.io/remark-deflist-revisited/script.esm.sh.html
 [generated]: https://verikami.github.io/remark-deflist-revisited/generated
