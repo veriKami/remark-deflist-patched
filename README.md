@@ -240,7 +240,7 @@ Original work — MIT © Alex Shaw
 * [gh: Symbitic/remark-plugins](https://github.com/Symbitic/remark-plugins)
 * [npm: remark-deflist](https://www.npmjs.com/package/remark-deflist)
 
-2025 © MIT °// veriKami °// Weronika Kami
+2025 © MIT \\\° veriKami °// Weronika Kami
 
 <hr></details>
 <details name="d3" open><summary><strong>Examples and Templates</strong></summary><hr>
@@ -286,7 +286,7 @@ npx @verikami/remark-deflist-revisited --help
 
 ### License
 
-2025 © MIT °// veriKami °// Weronika Kami
+2025 © MIT \\\° veriKami °// Weronika Kami
 
 </details>
 <hr style="height:1px;margin:15px 0 15px;">
